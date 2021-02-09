@@ -1,0 +1,22 @@
+{
+  "name": "custom-action-hub-example",
+  "version": "1.0.0",
+  "description": "This is an example custom action hub that can be used to create a Looker Action Hub server that only includes your own custom actions.",
+  "main": "index.js",
+  "repository": "https://github.com/looker/custom-action-hub-example",
+  "author": "Looker <opensource@looker.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "/var/app/current/node_modules/.bin/ts-node --async-stack-traces -- /var/app/current/src/index.ts"
+  },
+  "dependencies": {
+    "looker-action-hub": "looker/actions",
+    "node-fetch": "^2.6.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "engines": {
+    "node": "12.16.1",
+    "yarn": ">=1.19.1"
+  }
+}

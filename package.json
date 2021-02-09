@@ -7,11 +7,12 @@
   "author": "Looker <opensource@looker.com>",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/ts-node --async-stack-traces -- ./src/index.ts"
+    "start": "ts-node /var/app/current/src/index.ts"
   },
   "dependencies": {
     "looker-action-hub": "looker/actions",
     "node-fetch": "^2.6.1",
+    "repl": "0.1.3",
     "ts-node": "^9.0.0",
     "typescript": "^4.1.2"
   },

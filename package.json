@@ -7,7 +7,7 @@
   "author": "Looker <opensource@looker.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node /var/app/current/src/index.ts"
+    "start": "./node_modules/.bin/ts-node ./src/index.ts"
   },
   "dependencies": {
     "looker-action-hub": "looker/actions",

@@ -273,4 +273,3 @@ export class SegmentAction extends Hub.Action {
 
 }
 
-Hub.addAction(new SegmentAction())

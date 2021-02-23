@@ -10,6 +10,7 @@
     "start": "./node_modules/.bin/ts-node ./src/index.ts"
   },
   "dependencies": {
+    "analytics-node": "^4.0.0",
     "looker-action-hub": "looker/actions",
     "node-fetch": "^2.6.1",
     "repl": "0.1.3",

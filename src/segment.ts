@@ -38,15 +38,7 @@ export class SegmentAction extends Hub.Action {
   label = "Segment Identify"
   iconName = "segment/segment.png"
   description = "Add traits via identify to your Segment users."
-  params = [
-    {
-      description: "A write key for Segment.",
-      label: "Segment Write Key",
-      name: "segment_write_key",
-      required: true,
-      sensitive: true,
-    },
-  ]
+  params = []
   minimumSupportedLookerVersion = "4.20.0"
   supportedActionTypes = [Hub.ActionType.Query]
   usesStreaming = true

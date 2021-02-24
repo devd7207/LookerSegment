@@ -62,6 +62,17 @@ export class SegmentAction extends Hub.Action {
     }
   }
 
+  async form() {
+    const form = new Hub.ActionForm()
+    form.fields = [{
+      label: "Write Key for Segment",
+      name: "segment_write_key",
+      required: true,
+      type: "string",
+    }]
+    return form
+  }
+
   async execute(request: Hub.ActionRequest) {
     return this.executeSegment(request, SegmentCalls.Identify)
   }
@@ -264,7 +275,7 @@ export class SegmentAction extends Hub.Action {
   }
 
   protected segmentClientFromRequest(request: Hub.ActionRequest) {
-    return new segment(request.params.segment_write_key)
+    return new segment(request.formParams.segment_write_key)
   }
 
   protected generateAnonymousId() {

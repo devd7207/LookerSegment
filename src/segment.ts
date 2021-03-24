@@ -43,7 +43,7 @@ export class SegmentAction extends Hub.Action {
   supportedActionTypes = [Hub.ActionType.Query]
   usesStreaming = true
   supportedFormattings = [Hub.ActionFormatting.Unformatted]
-  supportedVisualizationFormattings = [Hub.ActionVisualizationFormatting.Noapply]
+  supportedVisualizationFormattings = [Hub.ActionVisualizationFormatting.Apply]
   requiredFields = [{ any_tag: this.allowedTags }]
   executeInOwnProcess = true
   supportedFormats = (request: Hub.ActionRequest) => {
